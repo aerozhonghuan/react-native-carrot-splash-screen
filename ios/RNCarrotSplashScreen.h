@@ -4,8 +4,10 @@
 #else
 #import <React/RCTBridgeModule.h>
 #endif
-
+#import <Foundation/Foundation.h>
 @interface RNCarrotSplashScreen : NSObject <RCTBridgeModule>
-
+- (instancetype)init;
+- (void)show;
+- (void)hide;
 @end
   
