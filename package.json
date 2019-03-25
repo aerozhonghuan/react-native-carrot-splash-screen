@@ -1,0 +1,59 @@
+{
+  "name": "react-native-carrot-splash-screen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-fix": "npx eslint --fix .",
+    "eslint": "eslint ."
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "util",
+    "flashlight",
+    "camera"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@https://github.com/rocket-developer/react-native-carrot-splash-screen.git"
+  },
+  "author": {
+    "name": "wanglh",
+    "email": "zh-app-developer@aerozhonghuan.com"
+  },
+  "bugs": {
+    "url": "https://github.com/rocket-developer/react-native-carrot-splash-screen/issues"
+  },
+  "homepage": "https://github.com/aerozhonghuan/react-native-carrot-splash-screen",
+  "license": "MIT",
+  "peerDependencies": {
+    "prop-types": ">=15.6.2",
+    "react": ">=16.5.0",
+    "react-native": ">=0.57.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "metro-react-native-babel-preset": "^0.53.1"
+  },
+  "dependencies": {},
+  "jest": {
+    "preset": "react-native",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
