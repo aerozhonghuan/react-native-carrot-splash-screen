@@ -35,11 +35,48 @@
   	```
 
 
-## Usage
-```javascript
-import RNCarrotSplashScreen from 'react-native-carrot-splash-screen';
+## Methods
 
-// TODO: What to do with the module?
-RNCarrotSplashScreen;
+| Method  | Params  | Description |
+| :------------ |:---------------:| :---------------:|
+| show | - |Called in native, When you want to keep the splash screen |
+| hide | - | Call in js when you want to close the splash screen |
+
+## Usage
+`javascript`
+`
+import RNCarrotSplashScreen from 'react-native-carrot-splash-screen';`
+### iOS
+`AppDelegate.m `
 ```
+#import "AppDelegate.h"
+#import <React/RCTBridge.h>
+#import <React/RCTBundleURLProvider.h>
+#import "RNCarrotSplashScreen.h"
+#import <React/RCTRootView.h>
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  ...
+  [self.window makeKeyAndVisible];
+  [RNCarrotSplashScreen show];//Please be sure to write in the last line
+  return YES;
+}
+```
+`javascript`
+```
+export default class App extends Component<Props> {
+  render() {
+  ...
+  componentDidMount(){
+		//Hide the splash screen
+    CarrotSplashScreen.hide();
+	}
+	...
+}
+```
+`Android`
+
   
