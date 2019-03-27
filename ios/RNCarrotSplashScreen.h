@@ -1,3 +1,10 @@
+/*
+ * @Description: The module for eact-native-carrot-splash-screen,Solve the problem of launching a white screen in a React Native project
+ * @Author: wanglh
+ * @LastEditors: wanglh
+ * @Date: 2019-03-25 16:03:18
+ * @LastEditTime: 2019-03-27 15:02:37
+ */
 
 #import <React/RCTBridgeModule.h>
 @interface RNCarrotSplashScreen : NSObject <RCTBridgeModule>
