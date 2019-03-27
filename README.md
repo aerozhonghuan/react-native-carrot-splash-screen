@@ -1,5 +1,6 @@
 
 # react-native-carrot-splash-screen
+Solve the problem of launching a white screen in a React Native project
 
 ## Getting started
 
