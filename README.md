@@ -66,7 +66,7 @@ import RNCarrotSplashScreen from 'react-native-carrot-splash-screen';`
   return YES;
 }
 ```
-`javascript`
+### javascript
 ```
 export default class App extends Component<Props> {
   render() {
@@ -78,6 +78,22 @@ export default class App extends Component<Props> {
 	...
 }
 ```
-`Android`
+### Android
+1. Create a layout file under ./res/layout, named launch_screen.
+2. Call the CarrotSplashScreen.show() method in the onCreate lifecycle of MainActivity.
+```
+import android.os.Bundle;
+import com.awesomeproject.splash.SplashScreen;
+import com.facebook.react.ReactActivity;
+
+public class MainActivity extends ReactActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen.show(this);
+        super.onCreate(savedInstanceState);
+    }
+    ...
+}
+```
 
   

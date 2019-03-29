@@ -4,19 +4,25 @@ package com.carrot.splashScreen;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 
 public class RNCarrotSplashScreenModule extends ReactContextBaseJavaModule {
 
-  private final ReactApplicationContext reactContext;
+    public RNCarrotSplashScreenModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+    }
 
-  public RNCarrotSplashScreenModule(ReactApplicationContext reactContext) {
-    super(reactContext);
-    this.reactContext = reactContext;
-  }
+    @Override
+    public String getName() {
+        return "RNCarrotSplashScreen";
+    }
 
-  @Override
-  public String getName() {
-    return "RNCarrotSplashScreen";
-  }
+    @ReactMethod
+    public void show() {
+        SplashScreen.show(getCurrentActivity());
+    }
+
+    @ReactMethod
+    public void hide() {
+        SplashScreen.hide(getCurrentActivity());
+    }
 }
