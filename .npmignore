@@ -9,6 +9,5 @@ coverage
 .lock-wscript
 build/Release
 node_modules
-res
 example
 /android/build
