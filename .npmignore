@@ -44,3 +44,16 @@ buck-out/
 \.buckd/
 *.keystore
 example/node_modules/
+
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.lock-wscript
+build/Release
+node_modules
+example
+/android/build
