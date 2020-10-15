@@ -46,7 +46,6 @@ buck-out/
 example/node_modules/
 
 
-.DS_Store
 logs
 *.log
 pids
