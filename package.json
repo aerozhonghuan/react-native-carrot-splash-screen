@@ -49,11 +49,6 @@
     "eslint-plugin-react": "^7.12.4",
     "metro-react-native-babel-preset": "^0.53.1"
   },
-  "dependencies": {
-    "react": "16.6.3",
-    "react-native": "0.58.4",
-    "react-native-gesture-handler": "^1.0.15"
-  },
   "jest": {
     "preset": "react-native",
     "testPathIgnorePatterns": [
