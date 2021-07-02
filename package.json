@@ -1,7 +1,7 @@
 {
   "name": "react-native-carrot-splash-screen",
-  "version": "1.0.7",
-  "description": "",
+  "version": "1.0.8",
+  "description": "Solve the problem of launching a white screen in a React Native project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
